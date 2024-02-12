@@ -1,11 +1,6 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 import Login from "../Login/Login";
 import Header from "../header/Header";
-import { useNavigate } from "react-router";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../utils/firebase";
-import { addUser, removeUser } from "../../utils/redux/userSlice";
+
 
 const Body = () => {
  

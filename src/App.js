@@ -18,7 +18,6 @@ const AppRouter = createBrowserRouter([
 
 
 function App() {
-    console.log("hello i am here")
   return (
     <Provider store={appStore}>
     <RouterProvider router={AppRouter}>

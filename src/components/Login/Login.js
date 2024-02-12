@@ -20,7 +20,6 @@ const Login = () => {
 
   function handleClick() {
     const message = validateData(email.current.value, password.current.value);
-    console.log(message);
     setErrorMessage(message);
     if (message) return;
 
@@ -39,8 +38,6 @@ const Login = () => {
             displayName: name.current.value,
           })
             .then(() => {
-              console.log(user);
-              console.log(auth);
               const { uid, displayName, email } = auth.currentUser;
               dispatch(
                 addUser({ uid: uid, displayName: displayName, email: email })
@@ -52,8 +49,6 @@ const Login = () => {
               // An error occurred
               // ...
             });
-          console.log(user);
-          console.log("hello");
           // ...
         })
         .catch((error) => {
@@ -72,7 +67,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
           // ...
         })
         .catch((error) => {
