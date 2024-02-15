@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import useMoviesTrailer from "./useMovesTrailer";
+import useMoviesTrailer from "../hooks/useMovesTrailer";
 import { useSelector } from "react-redux";
 
 const VideoBackground = ({ id }) => {
@@ -8,9 +8,9 @@ const VideoBackground = ({ id }) => {
   return (
     <div className="">
       <iframe
-      className=" w-screen h-screen"
+      className=" w-screen h-screen -z-10"
         src={"https://www.youtube.com/embed/"
-        + trailerVideo?.key+  "?autoplay=1&mute=1" + "&loop=1"}
+        + trailerVideo?.key+  "?autoplay=1&mute=1" + "&loop=1" +"&playlist="+trailerVideo?.key}
         title="YouTube video player"
        
       ></iframe>

@@ -12,12 +12,10 @@ const useMoviesTrailer = (id) => {
       Api_Options
     );
     const json = await data.json();
-
-    const filterData= json.results.filter((video)=>video.type==="Trailer");
+    const filterData= json.results.filter((video)=>video.type==="Teaser");
     const trailer= filterData.length?filterData[0]: json.results[0];
    
     dispatch(addTrailerMovies(trailer));
-    console.log(trailer);
   };
 
   useEffect(() => {

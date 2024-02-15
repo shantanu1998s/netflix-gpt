@@ -12,7 +12,6 @@ import { useEffect } from "react";
       );
       const json=await data.json();
       dispatch(addNowplayingMoviesList(json.results))
-      console.log(json.results)
     };
   
     useEffect(()=>{
