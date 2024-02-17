@@ -40,7 +40,6 @@ const Header = () => {
       .then(() => {
         dispatch(removeUser());
         navigate("/");
-        console.log("i a insid");
         // Sign-out successful.
       })
       .catch((error) => {
