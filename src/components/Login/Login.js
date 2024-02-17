@@ -81,7 +81,7 @@ const Login = () => {
   }
 
   return (
-    <div className=" text-white w-[30%] bg-black opacity-90 h-[90%] py-2">
+    <div className=" text-white w-[30%] bg-black opacity-90 h-[90%] py-2 rounded-md">
       <form
         className=" flex items-center w-[100%] h-[100%] flex-col my-5"
         onSubmit={(e) => e.preventDefault()}

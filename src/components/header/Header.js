@@ -57,17 +57,17 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed h-14 w-full bg-gradient-to-b from-black  flex justify-between z-30">
+    <div className="fixed h-14 w-full bg-gradient-to-b from-black  flex flex-col md:flex-row md:justify-between z-30">
       <div className="flex">
         <img
           className="w-44 left-24 top-2"
           alt="logo"
           src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
         />
-        <h1 className="text-red-700 font-bold mt-2 text-3xl">🕉Radhe Radhe🙏</h1>
+        <h1 className="text-red-700 font-bold mt-2 text-3xl hidden sm:block">🕉Radhe Radhe🙏</h1>
       </div>
       {user && (
-        <div className=" ">
+        <div className="">
           {
             showGptSearch &&(
             <select
@@ -84,7 +84,7 @@ const Header = () => {
           }
 
           <button
-            className="bg-red-700 mr-24 px-4 py-2 rounded-lg text-white"
+            className="bg-red-700  md:mr-24 px-4 py-2 rounded-lg text-white"
             onClick={handleGptSearchClick}
           >
             { showGptSearch?"Home":"🔍 GPT Search"}
