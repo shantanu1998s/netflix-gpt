@@ -12,4 +12,6 @@ export const Api_Options = {
 
   export const BG_URL="https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg";
   
-  export const OPENAI_KEY="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";
+  export const OPENAI_KEY="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";
+
+  // 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
